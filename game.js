@@ -204,6 +204,7 @@
                     CONSTS.ballLeftSpeed = CONSTS.ballLeftSpeed * -1;
                 } else {
                     CONSTS.score2++;
+                    saveScore();
                     if (CONSTS.score2 == 5) {
                         gameEnd(intervalID);  
                     } else {
@@ -216,6 +217,7 @@
                     CONSTS.ballLeftSpeed = CONSTS.ballLeftSpeed * -1;
                 } else {
                     CONSTS.score1++;
+                    saveScore();
                     if (CONSTS.score1 == 5) {
                         gameEnd(intervalID);
                     } else {
